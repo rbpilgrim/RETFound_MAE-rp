@@ -370,8 +370,9 @@ def main(args):
 
 
 if __name__ == '__main__':
-    print('hey')
+    print('hey_main')
     args = get_args_parser()
+    print('hey_args')
     args = args.parse_args()
 
     if args.output_dir:
