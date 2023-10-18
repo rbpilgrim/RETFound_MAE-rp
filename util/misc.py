@@ -12,13 +12,12 @@ from pathlib import Path
 
 import torch
 import torch.distributed as dist
-from torch._six import inf
-
+from torch import inf
 
 class SmoothedValue(object):
     """Track a series of values and provide access to smoothed values over a
     window or the global series average.
-    """
+    """œ
 
     def __init__(self, window_size=20, fmt=None):
         if fmt is None:
