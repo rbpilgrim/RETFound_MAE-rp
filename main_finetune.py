@@ -152,8 +152,9 @@ def get_args_parser():
 
 
 def main(args):
+    print('hey')
     misc.init_distributed_mode(args)
-
+    print('hey')
     print('job dir: {}'.format(os.path.dirname(os.path.realpath(__file__))))
     print("{}".format(args).replace(', ', ',\n'))
 
